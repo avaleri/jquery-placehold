@@ -56,6 +56,12 @@
 						if ( $elem.val() === "" ) {
 							$elem.addClass( placeholderClassName ).val( placeholder_attr );
 						}
+			                        else if ( $elem.val() == placeholder_attr ) {
+			                            $elem.addClass( placeholderClassName ).val( placeholder_attr );
+			                        }
+			                        else {
+			                            $elem.removeClass( placeholderClassName )
+			                        }
 					}
 				});
 				
